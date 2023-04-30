@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css">
     <title>Back End Assessment</title>
   </head>
   <body class="container">
-    <button id="complimentButton">Get a compliment</button>
-   
+    <section class="btnSection">
+      <button id="complimentButton">Get a compliment</button>
+      <button id="fortuneButton">Get a fortune</button>
+      <label for="magicBallQuestion">What question would you like to ask the magic 8 ball?</label>
+      <input type="text" class="magicBallQuestion" id="magicBallQuestion" placeholder="What is your Question?">
+      <button class="submit">Ask the magic 8 Ball </button>
+  
+    
+  </section>
    
     <section class="fortuneSection">
-      <button id="fortuneButton">Get a fortune</button>
+  
 
     </section>
+
     <section class="magicBallSection">
-      <form>
-        <label for="magicBallQuestion">What question would you like to ask the magic 8 ball?</label>
-        <input type="text" class="magicBallQuestion" id="magicBallQuestion" placeholder="What is your Question?">
-        <button class="submit">Ask the magic 8 Ball </button>
-    </form>
+
     </section>
     <section class="httpRequestSection">
       <h3>Please update the following with the propper HTTPS request methodology</h3>
@@ -37,9 +42,9 @@
       <button class="deleteBtn">Update Delete</button>
     </section>
     <section class="deleteMe">
-      <p>I am a mole delete me! <button id="delete1" class="deleteMe">Delete</button></p>
-      <p>I am a Goblin Delete Me! <button id="delete2" class="deleteMe">Delete</button></p>
-      <p>I am a Dragon Delete me! <button id="delete3" class="deleteMe">Delete</button></p>
+      <p class="p1">I am a mole delete me! <button id="delete1" class="deleteMe">Delete</button></p>
+      <p class="p2">I am a Goblin Delete Me! <button id="delete2" class="deleteMe">Delete</button></p>
+      <p class="p3">I am a Dragon Delete me! <button id="delete3" class="deleteMe">Delete</button></p>
     </section>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

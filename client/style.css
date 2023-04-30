@@ -1,0 +1,19 @@
+.hidden{
+    display: none;
+}
+
+.magicBallSection{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    align-items: center;
+    color: darkblue;
+}
+
+.fortuneSection{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    align-items: center;
+    color: green;
+}

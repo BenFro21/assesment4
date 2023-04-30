@@ -124,6 +124,35 @@ const editP = (e) => {
     }
 } 
 
+// grab buttons for delete method
+let delete1 = document.querySelector('#delete1')
+let delete2 = document.querySelector('#delete2')
+let delete3 = document.querySelector('#delete3')
+let deleteArr = [delete1,delete2,delete3]
+
+let deleteOne = (e) => {
+  console.log(e.target.id) 
+  if(e.target.id === 'delete1'){
+    let p = document.querySelector('.p1')
+    p.classList.add('hidden')
+  }
+  else if(e.target.id === 'delete2'){
+    let p = document.querySelector('.p2')
+    p.classList.add('hidden')
+  }
+  else if(e.target.id === 'delete3'){
+    let p = document.querySelector('.p3')
+    p.classList.add('hidden')
+  }
+  else{
+    console.log('errrr')
+  }
+}
+
+//event listener for the delete
+deleteArr.forEach(btn => {
+    btn.addEventListener('click', deleteOne)
+})
 
 // event listeners 
 complimentBtn.addEventListener('click', getCompliment)
